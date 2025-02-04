@@ -11,7 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: "*",
+    // origin: process.env.CLIENT_URL,
     methods: ["GET", "PUT", "POST", "DELETE"],
     credentials: true,
   })
